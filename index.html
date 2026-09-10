@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GALOR AI Receptionist answers calls, filters spam, captures leads, and alerts your team when a human is needed.">
+  <title>GALOR AI Receptionist — Staged Service</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="wrap nav"><div class="brand">GALOR WEB WORKS</div><div class="badge">Staged service</div></header>
+  <main>
+    <section class="wrap hero">
+      <div><div class="eyebrow">Every call has a next step</div><h1>Your business answers—even when you can’t.</h1><p class="lede">A managed AI receptionist that handles routine phone intake, filters obvious spam, captures qualified leads, and alerts your team when human judgment is needed.</p><div class="cta"><a class="button" href="#test">Test intake</a><a class="button secondary" href="#pricing">View pricing</a></div></div>
+      <aside class="signal" aria-label="Service outcomes"><strong>24/7</strong><p>consistent answering</p><strong>4 outcomes</strong><p>lead · customer · spam · human needed</p><strong>0 silent guesses</strong><p>uncertainty routes to review</p></aside>
+    </section>
+
+    <section class="wrap"><div class="section-head"><div class="eyebrow">The workflow</div><h2>Answer. Qualify. Escalate.</h2><p class="muted">Callers hear an approved greeting, answer one question at a time, and can request a person. Urgent, sensitive, or low-confidence calls produce a human-needed alert.</p></div><div class="grid"><article class="card"><h3>Phone answering</h3><p class="muted">Approved business facts and concise intake without invented prices or availability.</p></article><article class="card"><h3>Spam filtering</h3><p class="muted">Obvious solicitation exits quickly. Ambiguous callers are never silently rejected.</p></article><article class="card"><h3>Human handoff</h3><p class="muted">Complaints, urgency, high-value opportunities, and explicit requests are escalated.</p></article></div></section>
+
+    <section id="pricing" class="wrap"><div class="section-head"><div class="eyebrow">Clear limits. Clear economics.</div><h2>Packages for real call volume.</h2></div><div class="grid"><article class="card"><h3>Launch</h3><div class="price">$299 <small>/ month</small></div><p>$499 setup</p><ul><li>300 connected minutes</li><li>100 SMS alerts</li><li>1 location · 1 call flow</li></ul></article><article class="card"><h3>Growth</h3><div class="price">$599 <small>/ month</small></div><p>$799 setup</p><ul><li>900 connected minutes</li><li>300 SMS alerts</li><li>2 locations · 3 call flows</li></ul></article><article class="card"><h3>Pro</h3><div class="price">$1,199 <small>/ month</small></div><p>$1,499 setup</p><ul><li>2,200 connected minutes</li><li>800 SMS alerts</li><li>5 locations · 8 call flows</li></ul></article></div><p class="muted">Overage: $0.35 per connected minute and $0.08 per SMS. Usage notice at 80%.</p></section>
+
+    <section id="test" class="wrap"><div class="section-head"><div class="eyebrow">Safe staged preview</div><h2>Test intake.</h2><p class="muted">See how a lead would be classified. This preview stays in this browser session. It sends no message and makes no network request.</p></div><div class="notice"><strong>Real phone answering is not enabled.</strong> No business number is connected. Production activation requires separate owner approval.</div><form id="test-intake" class="card form-card"><div class="form-grid"><div class="field"><label for="name">Test caller name</label><input id="name" name="name" autocomplete="off" required></div><div class="field"><label for="phone">Test callback number</label><input id="phone" name="phone" inputmode="tel" autocomplete="off" required></div><div class="field full"><label for="service">What does the caller need?</label><textarea id="service" name="service" required></textarea></div><div class="field"><label for="urgency">Urgency</label><select id="urgency" name="urgency"><option value="routine">Routine</option><option value="soon">Soon</option><option value="urgent">Urgent — human needed</option></select></div><div class="field full check"><input id="consent" name="consent" type="checkbox" required><label for="consent">I understand this is test-only and no one will call or text.</label></div><div class="field full"><button class="button" type="submit">Run test intake</button><p id="intake-result" class="result" aria-live="polite"></p></div></div></form></section>
+  </main>
+  <footer><div class="wrap">GALOR AI Receptionist · staged service page · phone activation disabled</div></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
