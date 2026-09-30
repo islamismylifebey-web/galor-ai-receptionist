@@ -1,0 +1,12 @@
+{
+  "name": "@galor/business-operations-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Production harness for GALOR's multi-tenant AI business operations platform.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "demo": "node src/example.js"
+  }
+}
